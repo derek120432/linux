@@ -93,7 +93,7 @@ echo "tom" | passwd --stiden tom ##修改使用者密碼
 
 ![image-20220503095003465](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220503095003465.png)
 
-![image-20220503095130910]((https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220503095130910.png)
+![image-20220503095130910](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220503095130910.png)
 
 ------
 
