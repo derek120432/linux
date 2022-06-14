@@ -36,8 +36,11 @@ a.zip ##解密
 集縮比
 
 ```
+集縮比（英語：Concentration Rate），是ISP是用戶端電路總頻寬至ISP端頻寬比例。業者均會告知用戶下載及上傳頻寬，但該速率僅為該用戶端線路最高可能達到的瞬間速率。實際頻寬則受限於集縮比。集縮比也是ISP創造利潤的基礎，集縮比越大，越能降低ISP分攤至各用戶頻寬的線路成本。
 ```
-
+資料來源
+https://zh.m.wikipedia.org/zh-tw/%E9%9B%86%E7%B8%AE%E6%AF%94
+***
 PT test
 
 ```
@@ -47,8 +50,10 @@ PT test
 堆疊(stacking)
 
 ```
+堆疊（英語：stack）又稱為棧或堆棧，是電腦科學中的一種抽象資料型別，只允許在有序的線性資料集合的一端（稱為堆疊頂端，英語：top）進行加入資料（英語：push）和移除資料（英語：pop）的運算。因而按照後進先出（LIFO, Last In First Out）的原理運作。常與另一種有序的線性資料集合佇列相提並論。
 ```
-
+資料來源
+https://zh.wikipedia.org/zh-tw/%E5%A0%86%E6%A0%88
 ```
 "echo hi" > a.sh ##輸入echo hi 到a.sh
 chmod +x a.sh ##change mod +x(可執行)
