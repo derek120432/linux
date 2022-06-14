@@ -91,9 +91,9 @@ echo "tom" | passwd --stiden tom ##修改使用者密碼
 
 ## 腳本
 
-![image-20220503095003465](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220503095003465.png)
+![image-20220503095003465](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220503095003465.png)
 
-![image-20220503095130910](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220503095130910.png)
+![image-20220503095130910]((https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220503095130910.png)
 
 ------
 
@@ -117,13 +117,13 @@ mkdir a ##創建資料夾a
 
 # find . ctime [] mtime [] ##是有修改
 
-##　![image-20220524100746634](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220524100746634.png)
+##　![image-20220524100746634](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220524100746634.png)
 
 ##　suid(4) sgid(2) stickybit(1) ##-rwsr-xr-x(477)
 
 find . -type f -perm 0777
 
-![image-20220503104824793](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220503104824793.png)
+![image-20220503104824793](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220503104824793.png)
 
 ------
 
@@ -131,13 +131,13 @@ find . -type f -perm 0777
 
 ## find . -type f -name "*.txt" -exec rm -f {}
 
-![image-20220503110119898](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220503110119898.png)
+![image-20220503110119898](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220503110119898.png)
 
 ## 量檔案備份
 
-![image-20220503114759656](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220503114759656.png)
+![image-20220503114759656](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220503114759656.png)
 
-![image-20220503114806929](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220503114806929.png)
+![image-20220503114806929](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220503114806929.png)
 
 ```
 cat /etc/resolv.conf ##可以修改ping(把resolv.conf當檔案)
@@ -153,35 +153,35 @@ cat /etc/hosts | grep -v "^$" ##可以去除空白行
 
 ## tac與cat差異
 
-![image-20220510093146978](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220510093146978.png)
+![image-20220510093146978](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220510093146978.png)
 
 ## cat <<EOF
 
-![image-20220510093553789](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220510093553789.png)
+![image-20220510093553789](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220510093553789.png)
 
 ## cat <<EOF < /tmp/a.txt
 
-![image-20220510093820064](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220510093820064.png)
+![image-20220510093820064](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220510093820064.png)
 
 ## cat <<< "hi" (hi is a string)讀取並顯示
 
-![image-20220510093730119](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220510093730119.png)
+![image-20220510093730119](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220510093730119.png)
 
 ## [grep](https://dotblogs.com.tw/xerion30476/2021/05/21/Linux)
 
-![image-20220510094722078](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220510094722078.png)
+![image-20220510094722078](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220510094722078.png)
 
 ## 通配符(wildcard) *:是用來匹配檔案名稱的  正則表達室友來表達檔案內容的 (regular expression)
 
-![image-20220510095743192](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220510095743192.png)
+![image-20220510095743192](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220510095743192.png)
 
 ## grep 在資料夾中收尋關鍵字
 
-![image-20220510100446349](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220510100446349.png)
+![image-20220510100446349](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220510100446349.png)
 
 ## 只收尋.conf檔
 
-![image-20220510100459488](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220510100459488.png)
+![image-20220510100459488](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220510100459488.png)
 
 # **顯示前後幾行**
 
@@ -193,7 +193,7 @@ grep -C 1 127 /etc/hosts ##前跟後
 
 ## cat /etc/hosts | grep -v "^$" 
 
-![image-20220510102822675](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220510102822675.png)
+![image-20220510102822675](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220510102822675.png)
 
 ***
 
@@ -262,17 +262,17 @@ q!:quit and give up modified things
 
 lsblk
 
-![image-20220517092534822](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220517092534822.png)
+![image-20220517092534822](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220517092534822.png)
 
 lsblk -f
 
-![image-20220517092801348](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220517092801348.png)
+![image-20220517092801348](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220517092801348.png)
 
 ```
 ext2 ext3 ext4 xfs (linux常用掛載檔案格式)
 ```
 
-![image-20220517093216385](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220517093216385.png)
+![image-20220517093216385](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220517093216385.png)
 
 umount /media
 
@@ -289,17 +289,17 @@ vfat 不需要驅動程式
 
 找尋在線的使用者
 
-![image-20220524094430463](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220524094430463.png)
+![image-20220524094430463](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220524094430463.png)
 
 # FIND尋找檔案Grep可以找得更廣
 
 ## linux 開機執行的第一個程式
 
-![image-20220531092329342](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220531092329342.png)
+![image-20220531092329342](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220531092329342.png)
 
 ## 為什麼init會被systemb取代
 
-![image-20220531092540293](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220531092540293.png)
+![image-20220531092540293](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220531092540293.png)
 
 ```
 free -m ##看memory使用情形
@@ -307,7 +307,7 @@ free -m ##看memory使用情形
 
 ## 看到執行程式花的時間
 
-![image-20220531105134097](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220531105134097.png)
+![image-20220531105134097](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220531105134097.png)
 
 ctrl+c
 
@@ -317,7 +317,7 @@ ctrl+z
 
 丟到背景執行
 
-![image-20220531113335539](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220531113335539.png)
+![image-20220531113335539](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220531113335539.png)
 
 ## 符號
 
@@ -338,15 +338,15 @@ $@
 
 
 
-![image-20220607092709651](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220607092709651.png)
+![image-20220607092709651](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220607092709651.png)
 
-![image-20220607095244944](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220607095244944.png)
+![image-20220607095244944](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220607095244944.png)
 
 ***
 
-![image-20220607093616265](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220607093616265.png)
+![image-20220607093616265](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220607093616265.png)
 
-![image-20220607093944420](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220607093944420.png)
+![image-20220607093944420](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220607093944420.png)
 
 ***
 
@@ -365,11 +365,11 @@ orphan process
 當child process還在執行中parents process死掉就會變成orphan process
 ```
 
-![image-20220607100437805](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220607100437805.png)
+![image-20220607100437805](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220607100437805.png)
 
 zombie
 
-![image-20220607101515576](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220607101515576.png)
+![image-20220607101515576](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220607101515576.png)
 
 ***
 
@@ -377,5 +377,5 @@ su 跟 su-差別
 
 環境變量
 
-![image-20220607110118672](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20220607110118672.png)
+![image-20220607110118672](https://github.com/derek120432/linux/blob/main/linux%20picture/image-20220607110118672.png)
 
