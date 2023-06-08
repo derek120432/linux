@@ -1,11 +1,40 @@
 # webDAV建立
 
 ### 網路磁碟機
-
+1. ```yum install epel-release```
+2. 檢查httpd有沒有支援DAV
 ```
-httpd -M | grep DAV //檢查httpd有沒有支援DAV
+httpd -M | grep DAV
 ```
-
+![](images/webdav01.jpg)<br>
+3. 創建資料夾
+```
+mkdir /var/www/html/web
+```
+4.把擁有者和使用者權限切成apache
+```chown -R apache:apache /var/www/html```
+```chmod -R 755 /var/www/html```
+5. ```vim /etc/httpd/conf.d/webdav.conf```
+```
+DavLockDB /var/www/html/DavLock
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html/webdav/
+    ErrorLog /var/log/httpd/error.log
+    CustomLog /var/log/httpd/access.log combined
+    Alias /webdav /var/www/html/webdav
+    <Directory /var/www/html/webdav>
+        DAV On
+        #AuthType Basic
+        #AuthName "webdav"
+        #AuthUserFile /etc/httpd/.htpasswd
+        #Require valid-user
+        </Directory>
+</VirtualHost>
+```
+6.```systemctl restart httpd```
+### Successsfully
+![](images/webdav02.jpg)<br>
 # linux sed
 
 linux 三劍客 awk/grep/[sed](https://shengyu7697.github.io/linux-sed/)
