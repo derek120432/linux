@@ -47,22 +47,22 @@ sed 's/Alan/tom' setting.conf #只改螢幕上的內容
 sed -i 's/Alan/tom' setting.conf #連檔案內的一起更改
 ```
 
-![image-20230222105945137](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230222105945137.png)
+![image-20230222105945137](images/sed01.png)
 
 ```
 sed 's/name:.*/name:Dunk/g' setting.conf
 ```
 
-![image-20230222113312037](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230222113312037.png)
+![image-20230222113312037](images/sed02.png)
 
-![image-20230222115757836](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230222115757836.png)
+![image-20230222115757836](images/sed03.png)
 
 ```
  sed 's/abc\ d/a\ bcd/' bb #因為空白為特殊符號所以前面需要加\
  sed 's#abc\ d#a\ bcd#' bb #意思同上
 ```
 
-![image-20230222113859905](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230222113859905.png)
+![image-20230222113859905](images/sed04.png)
 
 ``` 
 echo "1234" | sed 's/.*/(&)/' => (1234)
@@ -93,13 +93,13 @@ EOF
 
 ```
 
-![image-20230222103122758](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230222103122758.png)
+![image-20230222103122758](images/sed05.png)
 
 執行結果
 
-![image-20230222102957970](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230222102957970.png)
+![image-20230222102957970](images/sed06.png)
 
-![image-20230222103410918](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230222103410918.png)
+![image-20230222103410918](images/sed07.png)
 
 ### 例2
 
@@ -120,11 +120,11 @@ EOF
 
 
 
-![image-20230222103952647](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230222103952647.png)
+![image-20230222103952647](images/sed08.png)
 
 執行結果
 
-![image-20230222103857875](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230222103857875.png)
+![image-20230222103857875](images/sed09.png)
 
 read
 
@@ -138,7 +138,7 @@ read -p "Do you want to continue? (Y/y for Yes, any other key for No) " answer
 
 
 
-![image-20230222104550755](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230222104550755.png)
+![image-20230222104550755](images/sed10.png)
 
 # 正則表達
 
@@ -150,4 +150,4 @@ echo "123456" | grep "3.*" #3開始到結束
 
 刪除空白行
 
-![image-20230222112233449](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230222112233449.png)
+![image-20230222112233449](images/RegularExpression01.png)
