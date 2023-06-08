@@ -1,9 +1,9 @@
 |               week                | content                           |                          
 | :-------------------------------: | :---------------------------------| 
-|         [week01](week1.md)        |               week                |                                       
-|         [week02](week2.md)        |               week                |
-|         [week03](week3.md)        |               week                |
-|         [week04](week4.md)        |               week                |
+|         [week01](week1.md)        |               IPv6                |                                       
+|         [week02](week2.md)        |       IPv6 secure connection      |
+|         [week03](week3.md)        | [webdav]()<br>[sed]()<br>[正則表達式]()     |
+|         [week04](week4.md)        |[OpenAI Translator]()[ChatGPT+LineBot]()[自動產生字幕]()|
 |         [week05](week5.md)        |               week                |
 |         [week06](week6.md)        |               week                |
 |         [week07](week7.md)        |               week                |
