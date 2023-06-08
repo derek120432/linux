@@ -6,7 +6,7 @@
 ```
 httpd -M | grep DAV
 ```
-![](images/webdav01.jpg)<br>
+![](images/webdav01.png)<br>
 3. 創建資料夾
 ```
 mkdir /var/www/html/web
