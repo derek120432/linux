@@ -1,10 +1,12 @@
 # Zabbix Line Notify
 [參考](https://dotblogs.com.tw/xerion30476/2019/08/28/153643)
 > 取得line token
+
 登入line:https://notify-bot.line.me/zh_TW/<br>
 登入帳號後，下拉選項，選取「個人頁面」→「發行權杖」→「透過1對1聊天接收LINE Notify的通知」<br>
-> zabbix server<br>
-`vim /usr/lib/zabbix/alertscripts/line_notify.sh`<br>
+> zabbix server
+
+`vim /usr/lib/zabbix/alertscripts/line_notify.sh`
 ```
 #!/bin/bash
 # LINE Notify Token - Media > "Send to".
@@ -19,9 +21,9 @@ message="$1"
 curl https://notify-api.line.me/api/notify -H "Authorization: Bearer ${TOKEN}" -F "message=${message}"
 ```
 權限
-``
-sudo chmod 755 /usr/lib/zabbix/alertscripts/line_notify.sh
-sudo chown zabbix:zabbix /usr/lib/zabbix/alertscripts/line_notify.sh`
+```
+chmod 755 /usr/lib/zabbix/alertscripts/line_notify.sh
+chown zabbix:zabbix /usr/lib/zabbix/alertscripts/line_notify.sh
 ```
 test
 ```
@@ -49,6 +51,6 @@ test
 ![](images/custom03.jpg)
 ![](images/custom04.jpg)
 ![](images/custom05.jpg)
-* custom item
+* custom item<br>
 ###　successfully
 ![](images/custom06.jpg)
