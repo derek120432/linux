@@ -67,7 +67,8 @@ abc		A     192.168.202.120
 
 `serial`: 給定序號，通常使用日期表示，後面加上版本(01、02、03....)
 
-2. `vim /etc/named.rfc1912.zones`
+2. `vim /etc/named.rfc1912.zones`<br>
+<br>
 在最後面加上
 ```
 zone "a.com" IN {
@@ -85,7 +86,7 @@ named-checkconf
 systemctl restart named
 ```
 ### Successfully
-![](images/Dnssrever01.jpg)
+![](images/Dnsserver01.jpg)
 ***
 ### 反向解析
 IP 查詢 domain name<br>
@@ -114,6 +115,7 @@ zone "42.168.192.in-addr.arpa" IN {
 };
 ```
 加在最後面<br>
+<br>
 3. 檢查參數
 ```
 named-checkconf
