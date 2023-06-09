@@ -39,15 +39,17 @@ docker images 名稱格式
 
 ![image-20230322103838030](images/docker04.png)
 
-### docker rm (名稱or Contatner ID)  #砍容器
+### 砍容器
+`docker rm (名稱or Contatner ID) `
 
-​	contatnerID可以只打前四個
+​	`contatnerID`可以只打前四個
 
-![image-20230322104856137]images/docker05.png)
+![image-20230322104856137](images/docker05.png)
 
-### docker rmi (Image ID or Tag) #砍映像檔
+### 砍映像檔
+`docker rmi (Image ID or Tag)`
 
-​	imageID可以打3個字
+​	`imageID`可以打3個字
 
 ***
 
@@ -65,12 +67,17 @@ docker run -it -v /home/dere/test-python3:/tmp python:3.9.16-slim bash
 ***
 
 # Week7(3/29)
-
+`-d`在背景執行，`-it`是互動<br>
+* `docker run -d `<br>
+<br>
+跑APACHE<br>
+<br>
 ```
-docker run -d #-d在背景執行，-it互動
-docker run -d centos:web /usr/sbin/apachect1 -D FOREGROUND #跑APACHE 無法連接還要host binding(把docker跟host綁定)
+ocker run -d centos:web /usr/sbin/apachect1 -D FOREGROUND
 ```
-
+<br>
+無法連接還要host binding(把docker跟host綁定)<br>
+***
 host binding
 
 ```
@@ -79,13 +86,13 @@ host binding
 
 ### 新增網頁
 
-1.直接進入docker(不推薦)
+1. 直接進入docker(不推薦)
 
 ```
 docker exec -it (Container ID) bash
 ```
 
-2.docker run -d -p 8000:80 -v /home/derek/myweb:/var/www/html centos:0.2 /usr/sbin/apachectl -DFOREGROUND
+2. docker run -d -p 8000:80 -v /home/derek/myweb:/var/www/html centos:0.2 /usr/sbin/apachectl -DFOREGROUND
 
 ```
 docker rm -f (container ID) #先把容器關掉
