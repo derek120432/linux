@@ -32,7 +32,7 @@ services:
     command: "/usr/sbin/apachectl -DFOREGROUND"
 ```
 `docker-compose up`:執行 docker-compose<br>
-![](/images/dockercompose02.jpg)<br>
+![](images/dockercompose02.jpg)<br>
 `docker-compose ps`:查看運行中的 docker-compose<br>
 `docker-compose down`:停止 docker-compose<br>
 # jumpserver
@@ -58,9 +58,9 @@ Creating jms_koko   ... done
 ![](jumpserver01.jpg)<br>
 預設帳密皆為`admin`
 ## 新增user
-![](jumpserver02.jpg)<br>
-![](jumpserver03.jpg)<br>
-![](jumpserver04.jpg)<br>
-![](jumpserver05.jpg)<br>
-![](jumpserver06.jpg)<br>
-![](jumpserver07.jpg)<br>
+![](images/jumpserver02.jpg)<br>
+![](images/jumpserver03.jpg)<br>
+![](images/jumpserver04.jpg)<br>
+![](images/jumpserver05.jpg)<br>
+![](images/jumpserver06.jpg)<br>
+![](images/jumpserver07.jpg)<br>
