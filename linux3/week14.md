@@ -1,5 +1,5 @@
-[使用 chattr 指令設定檔案屬性，在 Linux 中預防檔案被更改或刪除](https://blog.gtwang.org/linux/how-to-make-file-immutable-on-linux-chattr-command/)[使用 chattr 指令設定檔案屬性，在 Linux 中預防檔案被更改或刪除](https://blog.gtwang.org/linux/how-to-make-file-immutable-on-linux-chattr-command/)
-
+# Chatter
+[使用 chattr 指令設定檔案屬性，在 Linux 中預防檔案被更改或刪除](https://blog.gtwang.org/linux/how-to-make-file-immutable-on-linux-chattr-command/)
 ```
 chattr +i a #新增i lock
 lsattr a #查看a有哪些高級屬性
