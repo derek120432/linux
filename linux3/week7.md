@@ -89,14 +89,14 @@ netstat -tunlp | grep 8080
 ![](images/docker09.jpg)
 ## docker hub
 > save&load<br>
-```$ docker save centos:0.01 > centos_web.tar```<br>
-```$ docker load centos:0.01 < centos_web.tar```<br>
+```docker save centos:0.01 > centos_web.tar```<br>
+```docker load centos:0.01 < centos_web.tar```<br>
 上傳鏡像到 [docker hub](https://hub.docker.com/)，完整名稱由三個部分組成 `[存儲位置IP](官方可省略)/[擁有者](官方可省略)/[docker名稱:tag]`，我們傳到官方，所以不用寫存儲位置IP
 
-```sh
-$ docker tag [ImageID] vader/centos:0.02
-$ docker login  # 登入docker
-$ docker push vader/centos:0.02  # 推鏡像
-$ docker rmi centos:0.01            # 刪除本地鏡像
-$ docker pull vader/centos:0.02  # 拉鏡像
+```
+docker tag [ImageID] vader/centos:0.02
+docker login  # 登入docker
+docker push vader/centos:0.02  # 推鏡像
+docker rmi centos:0.01            # 刪除本地鏡像
+docker pull vader/centos:0.02  # 拉鏡像
 ```
