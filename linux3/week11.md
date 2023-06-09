@@ -1,5 +1,5 @@
 # email
-1.申請token:[google application](https://security.google.com/settings/security/apppasswords?pli=1)
+1. 申請token:[google application](https://security.google.com/settings/security/apppasswords?pli=1)
 2. `vim /etc/mail.rc`
 <br>在最下面加上<br>
 ```
