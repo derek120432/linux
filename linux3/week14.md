@@ -32,6 +32,8 @@ chattr +i -R #目錄底下所有檔案一起加i lock
   id mary > /dev/null 2>&1
   useradd mary
   useradd tom
+  getfacl a    #取得檔案 a 的存取控制清單
+  setfacl -m u:mary:rw a   #讓 mary 對 a 有可讀可寫的權限
   ```
 
   ***
@@ -41,13 +43,39 @@ chattr +i -R #目錄底下所有檔案一起加i lock
   ```
   hostnamectl set-hostname centos7-1
   ```
-
-  ```
    bash
-  ```
 
   ***
+## SSH無密碼登入
+![](images/SSH01.jpg) 
+![](images/SSH02.jpg)
+![](images/SSH03.jpg)
+![](images/SSH04.jpg)
+### Successfully
+![](![](images/SSH05.jpg))
+# ansible
+* `vim /etc/hosts`
+```
+192.168.198.137 centos7-1
+192.168.198.135 centos7-2
+192.168.198.136 centos7-3
+```
+* ansible install
+```
+yum install ansible -y
+```
+* `vim /etc/ansible/hosts`
 
-  
+```
+[server1]
+192.168.202.131
 
-  
+[server2]
+192.168.202.132
+
+[servers]
+192.168.202.131
+192.168.202.132
+```
+`ansible servers -m ping`<br>
+![](images/ansible01.jpg)
