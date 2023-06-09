@@ -59,6 +59,7 @@ Creating jms_koko   ... done
 預設帳密皆為`admin`
 ## 新增user
 ![](images/jumpserver02.jpg)<br>
+## 創造asset
 ![](images/jumpserver03.jpg)<br>
 ![](images/jumpserver04.jpg)<br>
 ![](images/jumpserver05.jpg)<br>
