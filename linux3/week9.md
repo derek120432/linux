@@ -55,7 +55,7 @@ Creating jms_web    ... done
 Creating jms_koko   ... done
 ```
 * 到網頁輸入虛擬機IP
-![](jumpserver01.jpg)<br>
+![](images/jumpserver01.jpg)<br>
 預設帳密皆為`admin`
 ## 新增user
 ![](images/jumpserver02.jpg)<br>
