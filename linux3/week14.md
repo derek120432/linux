@@ -78,4 +78,5 @@ yum install ansible -y
 192.168.202.132
 ```
 `ansible servers -m ping`<br>
+
 ![](images/ansible01.jpg)
