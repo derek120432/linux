@@ -86,5 +86,41 @@ systemctl restart named
 ```
 ### Successfully
 ![](images/Dnssrever01.jpg)
+***
 ### 反向解析
 IP 查詢 domain name<br>
+1. `vim /var/named/202.168.192.in_addr.arpa.zone`<br>
+```
+@ IN SOA	@ s110910514@student.nqu.edu.tw (
+		2021031803 ;serial
+		10800      ;refresh
+		900        ;retry
+		604800     ;expire
+		86400      ;minimum
+		)
+
+202.168.192.in-addr.arpa.    IN  NS dns1.a.com.
+202.168.192.in-addr.arpa.    IN  NS dns2.a.com.
+
+200.202.168.192.in-addr.arpa.  IN PTR www.a.com.
+150.202.168.192.in-addr.arpa.  IN PTR ftp.a.com.
+```
+2. `vim /etc/named.rfc1912.zones`
+```
+zone "42.168.192.in-addr.arpa" IN {
+	type master;
+	file "42.168.192.in-addr.arpa.zone";
+	allow-update { none; };
+};
+```
+加在最後面<br>
+3. 檢查參數
+```
+named-checkconf
+```
+4. 重啟
+```
+systemctl restart named
+```
+### Successfully
+![](images/Dnsserver02.jpg)
