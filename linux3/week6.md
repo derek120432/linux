@@ -64,7 +64,7 @@ docker run -it -v /home/dere/test-python3:/tmp python:3.9.16-slim bash
 
 ***
 
-# Week6(3/29)
+# Week7(3/29)
 
 ```
 docker run -d #-d在背景執行，-it互動
