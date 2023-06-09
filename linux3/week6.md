@@ -66,52 +66,6 @@ docker run -it -v /home/dere/test-python3:/tmp python:3.9.16-slim bash
 
 ***
 
-# Week7(3/29)
-`-d`在背景執行，`-it`是互動<br>
-`docker run -d`<br>
-> 跑APACHE<br>
-```
-ocker run -d centos:web /usr/sbin/apachect1 -D FOREGROUND
-```
-無法連接還要host binding(把docker跟host綁定)
-<br>
-***host binding***
-> test local port<br>
-`netstat -tunlp | grep 8080`<br>
-`$ docker run -d -p 8080:80 centos:0.01 /usr/sbin/apachectl -D FOREGROUND `<br>
-```
--p 8080:80 #8080是本機戶號 80是docker的戶號
-```
-### Successfully
-![](images/docker08.jpg)
-## 新增網頁
-
-1. 直接進入docker(不推薦)
-
-```
-docker exec -it (Container ID) bash
-cd /var/www/html
-echo "hi 123" > hi.htm
-```
-
-2. 把資料夾連結到docker(推薦)，資料和網站是分離的
-```
-docker run -d -p 8000:80 -v /home/derek/myweb:/var/www/html centos:0.2 /usr/sbin/apachectl -DFOREGROUND
-```
-
-```
-docker rm -f (container ID) #先把容器關掉
-mkdir myweb
-echo "11122" > hi.htm
-docker -run -d -p 8000:80 -v (本地要掛載進的資料夾路徑):(容器路徑) centos:(TAG) /usr/sbin/apachectl -DFOREGROUND
-```
-##　附載均衡
-
-
-
-```
-yum install haporxy
-```
 
 
 
