@@ -2,7 +2,7 @@
 docker --version #檢查有沒有docker
 ```
 
-![image-20230322100739227](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230322100739227.png)
+![image-20230322100739227](images/docker01.png)
 
 ```
 echo 1 > /proc/sys/net/ipv4/ip_forward #可以把路由器打開 0關起來
@@ -10,7 +10,7 @@ sudo echo 1 > /proc/sys/net/ipv4/ip_forward #有大小於容易出現permission 
 sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
 ```
 
-![image-20230322102124194](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230322102124194.png)
+![image-20230322102124194](images/docker02.png)
 
 ```
 docker info #列出docker服務資訊
@@ -33,17 +33,17 @@ docker rm -f `docker ps -a -q` #-f 可以刪除還活著的檔案
 
 ### 去dockerhub下載鏡像
 
-![image-20230322103102758](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230322103102758.png)
+![image-20230322103102758](images/docker03.png)
 
 docker images 名稱格式
 
-![image-20230322103838030](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230322103838030.png)
+![image-20230322103838030](images/docker04.png)
 
 ### docker rm (名稱or Contatner ID)  #砍容器
 
 ​	contatnerID可以只打前四個
 
-![image-20230322104856137](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230322104856137.png)
+![image-20230322104856137]images/docker05.png)
 
 ### docker rmi (Image ID or Tag) #砍映像檔
 
@@ -58,9 +58,9 @@ docker run -it -v /home/dere/test-python3:/tmp python:3.9.16-slim bash
 
 
 
-![image-20230322114701027](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230322114701027.png)
+![image-20230322114701027](images/docker06.png)
 
-![image-20230322114709725](C:\Users\PAVI\AppData\Roaming\Typora\typora-user-images\image-20230322114709725.png)
+![image-20230322114709725](images/docker07.png)
 
 ***
 
