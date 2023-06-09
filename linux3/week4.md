@@ -2,7 +2,7 @@
 
 * [參考網頁](https://mrmad.com.tw/chatgpt-line-robot-creation-teaching)
 
-![image-20230308093913401](images/ChatGPTL01.png)
+![image-20230308093913401](images/ChastGPTL01.png)
 
 ***
 
