@@ -1,0 +1,2 @@
+C:\ProgramData\chocolatey\bin
+C:\Users\PAVI\AppData\Local\Programs\MCA Selector
